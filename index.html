@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="text/css" href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <main>
+        <form>
+            <fieldset oninput="validate()">
+                <label for="number-card">
+                    <h2 class="titles"> Número do cartão</h2>
+                    <input id="number-card" type="number" placeholder="Número como está no cartão">
+                </label>
+                <label for="name-card">
+                    <h2 class="titles"> Nome do titular</h2>
+                    <input id="name-card" type="text" placeholder="Nome como está no cartão">
+                </label>
+
+                <label for="validate-number">
+                    <h2 class="titles">Validade</h2>
+                    <input id="validate-number" type="number" placeholder="mm/aa">
+                </label>
+                <label for="cvv">
+                    <h2 class="security-numbers">CVV</h2>
+                    <input id="cvv" type="number" placeholder="***">
+                </label>
+
+                <div class="card-picture">
+                    <div class="card">
+                        <h3 id="card-number-view"></h3>
+                        <h4 id="view-name"></h4>
+                        <h4 id="view-validate">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <script></script>
 </body>
+
 </html>
-git init 
-git add README.md 
-git commit -m "first commit" 
-git branch -M main 
-git remote add origin https://github.com/Lucasdelacerda/Formulario-de-cartao.git
- git push -u origin main
