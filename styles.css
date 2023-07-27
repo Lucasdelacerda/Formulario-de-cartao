@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+    --background-dark-blue: #111827;
+    --main-background-gray-800: #1F2937;
+    --border-color-gray-700: #374151;
+    --text-color-gray-200: #E5E7EB;
+    --button-color: #9333EA;
+    --button-value-color: #F9FAFB;
+    --neutral-colors-gray-900: #111827;
+}
+
+* {
+    margin: 0;
+    color: var(--text-color-gray-200);
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+
+    background: var(--background-dark-blue);
+    display: flex;
+    justify-content: center;
+    padding: 160px 352px 320px 352px;
+}
+
+main {
+    max-width: 736px;
+    background: var(--main-background-gray-800);
+    border-radius: 8px;
+    border: 1px solid var(--border-color-gray-700);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+    gap: 48px;
+}
+
+main fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+    width: 328px;
+}
+
+form .form-label,
+#number-card,
+#name-card {
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 16px;
+    width: 83%;
+}
+
+.first-label input {
+    width: 182px;
+}
+
+.second-label input {
+    width: 130px;
+}
+
+.titles {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#number-card,
+#name-card,
+#cvv,
+#validate-number {
+    background: var(--background-dark-blue);
+    padding: 12px;
+    border: 1px solid var(--border-color-gray-700);
+    border-radius: 4px;
+}
+
+label,
+input[type="text"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    gap: 32px;
+}
+
+.security-message {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.card {
+    width: 280px;
+    height: 160px;
+    border-radius: 16px;
+    background: url(./assets/Credit\ card.png) center;
+    background-size: auto;
+
+}
+
+#submit {
+    background: var(--button-color);
+    width: 100%;
+    padding: 16px 48px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--button-value-color);
+}
